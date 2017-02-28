@@ -28,12 +28,10 @@ $(function() {
 			$bgobj.css({ backgroundPosition: coords });
 
       //Darkens the background on scroll down
-      $('.background').css('filter', "brightness(" + (50 - (($window.scrollTop()/$window.height())*15)) + '%)');
-
+      $('.background').css('filter', "brightness(" + (50 - (($window.scrollTop()/$window.height())*30)) + '%)');
       var contentScroll = ($window.scrollTop()/$window.height())*($window.height()/3);
       if( contentScroll < 300)
       $('.content').css('margin-top', contentScroll + 'px')
-      console.log($('.content').css('margin-top'));
 		}); // end window scroll
 	});
 
