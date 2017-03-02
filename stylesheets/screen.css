@@ -69,17 +69,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 7, ../sass/screen.scss */
 body {
-  font-family: fantasy;
+  font-family: 'Antic Slab';
   padding-bottom: 50px;
+  height: 300vh;
+  background-color: #f5f5f5;
 }
 
-/* line 12, ../sass/screen.scss */
+/* line 14, ../sass/screen.scss */
+h1, h2, h3, h4 {
+  font-family: fantasy;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* line 20, ../sass/screen.scss */
 section {
   padding-top: 30px;
   margin-bottom: 30px;
 }
 
-/* line 16, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
+.indent {
+  margin-right: 45px;
+}
+
+/* line 29, ../sass/screen.scss */
 #navbar {
   display: none;
   height: 50px;
@@ -90,14 +104,14 @@ section {
   z-index: 2;
 }
 
-/* line 25, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 #hero {
   padding-top: 0;
   height: 100vh;
   width: 100vw;
   position: relative;
 }
-/* line 30, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 #hero .background {
   background: url("http://4.bp.blogspot.com/-_QKTDA4H_h0/T6lQMoeqaWI/AAAAAAAAAPE/qUFnA-XzfFw/s1600/Animation+Background+Project+redo+copy.jpg") no-repeat;
   background-size: cover;
@@ -107,7 +121,7 @@ section {
   filter: brightness(50%);
   position: absolute;
 }
-/* line 39, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 #hero .content {
   position: absolute;
   top: 50%;
@@ -116,76 +130,159 @@ section {
   color: #fff;
   text-align: center;
 }
-/* line 46, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 #hero .content h1 {
   font-size: 42px;
   margin-bottom: 30px;
 }
-/* line 50, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 #hero .content h3 {
   font-size: 30px;
   color: #999;
   margin-bottom: 30px;
 }
-/* line 55, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 #hero .content img {
   width: 200px;
   height: 200px;
   border-radius: 100%;
 }
-/* line 60, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 #hero .content a {
   color: #fff;
 }
 
-/* line 66, ../sass/screen.scss */
-#portfolio, #about {
+/* line 79, ../sass/screen.scss */
+#about {
+  background-color: #f5f5f5;
   text-align: center;
 }
-/* line 68, ../sass/screen.scss */
-#portfolio h2, #about h2 {
+/* line 82, ../sass/screen.scss */
+#about h2 {
   font-size: 36px;
   margin-bottom: 50px;
 }
-/* line 72, ../sass/screen.scss */
-#portfolio h4, #about h4 {
+/* line 86, ../sass/screen.scss */
+#about h4 {
   margin-top: 10px;
 }
-/* line 75, ../sass/screen.scss */
-#portfolio .col-md-4, #about .col-md-4 {
+/* line 89, ../sass/screen.scss */
+#about .col-md-4 {
   height: 258px;
 }
-
-/* line 81, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
+#about p {
+  font-size: 20px;
+  line-height: 1.5em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+/* line 98, ../sass/screen.scss */
+#about .left {
+  float: left;
+}
+/* line 101, ../sass/screen.scss */
 #about img {
   border-radius: 3px;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7), -3px 3px 6px rgba(0, 0, 0, 0.7);
+  float: right;
+  display: inline;
+  margin-left: 20px;
 }
-/* line 85, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 #about h3 {
   font-size: 24px;
 }
+/* line 111, ../sass/screen.scss */
+#about .col-md-6 {
+  padding: 0 35px;
+}
 
-/* line 90, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 #portfolio {
-  background: url("https://images.unsplash.com/photo-1467010458411-5f3ec4493afe?dpr=1&auto=compress,format&fit=crop&w=1199&h=899&q=80&cs=tinysrgb&crop=") no-repeat;
-  background-size: cover;
-  padding-bottom: 60px;
-}
-/* line 94, ../sass/screen.scss */
-#portfolio .item {
+  border-top: 2px solid #333;
   text-align: center;
-  background-color: #fff;
-  padding: 15px;
-  height: 100%;
-  width: 100%;
+  overflow: hidden;
 }
-/* line 101, ../sass/screen.scss */
-#portfolio .col-md-4 {
-  margin-top: 15px;
+/* line 120, ../sass/screen.scss */
+#portfolio h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+/* line 124, ../sass/screen.scss */
+#portfolio p {
   margin-bottom: 15px;
 }
-/* line 105, ../sass/screen.scss */
-#portfolio h2 {
-  margin-bottom: 35px;
+/* line 127, ../sass/screen.scss */
+#portfolio #project1 {
+  background: url("../img/adventures.png") no-repeat center center;
+  background-size: cover;
+}
+/* line 131, ../sass/screen.scss */
+#portfolio #project2 {
+  background: url("../img/codevelop.png") no-repeat center center;
+  background-size: cover;
+}
+/* line 135, ../sass/screen.scss */
+#portfolio #project3 {
+  background: url("../img/mattReads.png") no-repeat center center;
+  background-size: cover;
+}
+/* line 139, ../sass/screen.scss */
+#portfolio #project4 {
+  background: url("../img/sld.png") no-repeat center center;
+  background-size: cover;
+}
+/* line 143, ../sass/screen.scss */
+#portfolio #project5 {
+  background: url("../img/corgi.png") no-repeat center center;
+  background-size: cover;
+}
+/* line 147, ../sass/screen.scss */
+#portfolio #project6 {
+  background: url("../img/apple.png") no-repeat center center;
+  background-size: cover;
+}
+/* line 151, ../sass/screen.scss */
+#portfolio .info {
+  opacity: 0;
+  transition: opacity 1s ease;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translateX(-50%);
+}
+/* line 159, ../sass/screen.scss */
+#portfolio .info h2 {
+  margin-bottom: 10px;
+}
+/* line 163, ../sass/screen.scss */
+#portfolio .col-md-4 {
+  position: relative;
+  padding: 0;
+  height: 400px;
+}
+/* line 168, ../sass/screen.scss */
+#portfolio .col-md-4:hover .bg {
+  filter: brightness(20%);
+}
+/* line 171, ../sass/screen.scss */
+#portfolio .col-md-4:hover .info {
+  opacity: 1;
+}
+/* line 176, ../sass/screen.scss */
+#portfolio .bg {
+  width: 100%;
+  height: 100%;
+  filter: brightness(80%);
+  transition: filter 1s ease;
+}
+
+/* line 184, ../sass/screen.scss */
+footer {
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
 }
