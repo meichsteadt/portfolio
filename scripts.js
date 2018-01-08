@@ -35,5 +35,7 @@ $(function() {
 		}); // end window scroll
 	});
 
+  $('#copy').append(new Date().getFullYear())
+
   //Show nav on scroll
 });

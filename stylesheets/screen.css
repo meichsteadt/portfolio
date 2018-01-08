@@ -242,7 +242,7 @@ section {
 }
 /* line 150, ../sass/screen.scss */
 #portfolio #project6 {
-  background: url("../img/apple.png") no-repeat center center;
+  background: url("../img/homelegance.png") no-repeat center center;
   background-size: cover;
 }
 /* line 154, ../sass/screen.scss */
@@ -260,17 +260,17 @@ section {
   margin-bottom: 10px;
 }
 /* line 166, ../sass/screen.scss */
-#portfolio .col-md-4 {
+#portfolio .col-md-6 {
   position: relative;
   padding: 0;
   height: 400px;
 }
 /* line 171, ../sass/screen.scss */
-#portfolio .col-md-4:hover .bg {
+#portfolio .col-md-6:hover .bg {
   filter: brightness(20%);
 }
 /* line 174, ../sass/screen.scss */
-#portfolio .col-md-4:hover .info {
+#portfolio .col-md-6:hover .info {
   opacity: 1;
 }
 /* line 179, ../sass/screen.scss */
