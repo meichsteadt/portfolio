@@ -104,8 +104,7 @@ section {
     float: right;
     display: inline;
     margin-left: 20px;
-    width: 243px;
-    height: 400px;
+    width: 100%;
 
   }
   h3 {
@@ -117,7 +116,6 @@ section {
 }
 
 #portfolio {
-  border-top: 2px solid #333;
   text-align: center;
   overflow: hidden;
   h2 {
