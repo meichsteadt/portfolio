@@ -225,7 +225,7 @@ section {
 }
 /* line 136, ../sass/screen.scss */
 #portfolio #project3 {
-  background: url("../img/mattReads.png") no-repeat center center;
+  background: url("../img/smite.jpg") no-repeat center center;
   background-size: cover;
 }
 /* line 140, ../sass/screen.scss */
@@ -258,17 +258,17 @@ section {
   margin-bottom: 10px;
 }
 /* line 164, ../sass/screen.scss */
-#portfolio .col-md-6 {
+#portfolio .col-md-6, #portfolio .col-md-4 {
   position: relative;
   padding: 0;
   height: 400px;
 }
 /* line 169, ../sass/screen.scss */
-#portfolio .col-md-6:hover .bg {
+#portfolio .col-md-6:hover .bg, #portfolio .col-md-4:hover .bg {
   filter: brightness(20%);
 }
 /* line 172, ../sass/screen.scss */
-#portfolio .col-md-6:hover .info {
+#portfolio .col-md-6:hover .info, #portfolio .col-md-4:hover .info {
   opacity: 1;
 }
 /* line 177, ../sass/screen.scss */
