@@ -1,0 +1,12 @@
+.cover {
+  display: flex;
+  flex-direction: column;
+}
+
+.cover > * {
+  margin-block: var(--space);
+}
+
+.cover.fullWidth {
+  min-width: 100%;
+}

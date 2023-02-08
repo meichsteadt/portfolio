@@ -1,0 +1,9 @@
+.grid {
+  display: grid;
+}
+
+@supports (width: min(var(--minWidth), 100%)) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(var(--minWidth), 100%), 1fr));
+  }
+}

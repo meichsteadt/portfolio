@@ -1,0 +1,67 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Intro from "../modules/Intro/Intro";
+import About from "../modules/About/About";
+---
+
+<Layout title="Matt Eichsteadt">
+  <main>
+    <Intro />
+    <About />
+  </main>
+</Layout>
+
+<style is:global>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  :root {
+    --ratio: 1.5;
+    --s-5: calc(var(--s-4) / var(--ratio));
+    --s-4: calc(var(--s-3) / var(--ratio));
+    --s-3: calc(var(--s-2) / var(--ratio));
+    --s-2: calc(var(--s-1) / var(--ratio));
+    --s-1: calc(var(--s0) / var(--ratio));
+    --s0: 1rem;
+    --s1: calc(var(--s0) * var(--ratio));
+    --s2: calc(var(--s1) * var(--ratio));
+    --s3: calc(var(--s2) * var(--ratio));
+    --s4: calc(var(--s3) * var(--ratio));
+    --s5: calc(var(--s4) * var(--ratio));
+
+    --color-light: #fff;
+    --color-dark: #333;
+    color: var(--color-dark);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color: var(--color-light);
+      background-color: var(--color-dark);
+    }
+  }
+
+  main > * {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: min(80%);
+    max-width: min(1200px, 80%);
+    padding: var(--s2);
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: var(--s3);
+  }
+
+  h2 {
+    font-size: var(--s2);
+  }
+
+  h3 {
+    font-size: var(--s1);
+  }
+</style>

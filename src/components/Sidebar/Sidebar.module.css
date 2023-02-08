@@ -1,0 +1,29 @@
+.withSidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s1);
+}
+
+.withSidebar.left > :first-child {
+  flex-grow: 1;
+}
+
+.withSidebar.left > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: var(--minInlineSize);
+}
+
+.withSidebar.right > :last-child {
+  flex-grow: 1;
+}
+
+.withSidebar.right > :first-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: var(--minInlineSize);
+}
+
+.withSidebar.noStretch {
+  align-items: flex-start;
+}
